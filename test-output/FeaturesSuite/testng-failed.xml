@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FeaturesSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GroupingTest(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+        <exclude name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="seleniumPractice.Dependencymethod">
+        <methods>
+          <include name="search"/>
+          <include name="login"/>
+          <include name="advancedSearch"/>
+        </methods>
+      </class> <!-- seleniumPractice.Dependencymethod -->
+    </classes>
+  </test> <!-- GroupingTest(failed) -->
+</suite> <!-- Failed suite [FeaturesSuite] -->
